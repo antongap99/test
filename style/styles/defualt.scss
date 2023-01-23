@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+img, svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Prata', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+
+.button-prev,
+.button-next {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #303030;
+    border-radius: 27px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.button-prev:hover,
+.button-next:hover {
+    background-color: #F5F5F5;
+}

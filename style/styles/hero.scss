@@ -1,0 +1,107 @@
+.slide__wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 560px;
+    justify-content: space-between;
+}
+.hero__sliper {
+    background-color: #F8F8F8;
+}
+.slide__wrapper::after {
+    content: '';
+    background: url('../../assets/img/icons/diamond.svg') no-repeat;
+    width: 832.77px;
+    height: 642.52px;
+    position: absolute;
+    top: 24px;
+    z-index: -1;
+}
+
+.hero {
+    padding-bottom: 60px;
+}
+
+.hero__button-next {
+    top: 50%;
+    right: 24px;
+    transform: translateY(-27px);
+}
+
+.hero__button-prev {
+    transform: rotate(180deg) translateY(27px);
+    top: 50%;
+    left: 24px;
+}
+
+
+.hero__text {
+    margin-top: 176px;
+    margin-left: 126px;
+    font-family: 'Prata';
+
+    .hero__sale {
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #303030;
+    }
+
+    .hero__title {
+        margin-bottom: 54px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        color: #303030;
+    }
+
+    .hero__more {
+        width: 200px;
+        height: 54px;
+        background-color: #303030;
+        color: #FFFFFF;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .hero__more:hover {
+        background-color: #505050;
+    }
+}
+
+.hero_img {
+    display: block;
+    width: 548px;
+    height: 548px;
+    margin-right: 36px;
+}
+
+.hero__sliper {
+    .pagination {
+        position: absolute;
+        width: 40px;
+        height: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-20px);
+        bottom: 24px;
+        z-index: 10;
+
+        .pagination__item {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #303030;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pagination__item_active {
+            background-color: #303030;
+        }
+    }
+}
+
+

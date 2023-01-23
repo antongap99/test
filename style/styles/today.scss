@@ -1,0 +1,317 @@
+.today {
+    padding: 60px 0;
+}
+
+.today__wrapper {
+    position: relative;
+
+    .today__title {
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        color: #303030;
+        margin-bottom: 40px;
+    }
+}
+
+.today__item {
+    display: flex;
+    justify-content: space-between;
+
+    .item_img {
+        position: relative;
+
+        .item__marker {
+            position: absolute;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 100%;
+            color: #FFFFFF;
+            z-index: 10;
+        }
+
+        .item__marker_new {
+            top: 16px;
+            left: 16px;
+            background: #495159;
+        }
+
+        .item__marker_heat {
+            top: 16px;
+            left: 70px;
+            background: #E1A661;
+        }
+
+        .item__marker_sale {
+            top: 16px;
+            left: 124px;
+            background: #5B8A8F;
+        }
+    }
+}
+
+.today__item-info {
+
+    .rating__stars {
+        display: inline-block;
+        width: 109px;
+        height: 17px;
+        background: url('../../assets/img/today_sec/stars.png');
+    }
+
+    .review {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #303030;
+    }
+
+    .item__rating {
+        margin-bottom: 24px;
+    }
+
+    .item__title {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        color: #303030;
+        margin-bottom: 20px;
+    }
+
+    .item__article {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #8F8F8F;
+        margin-bottom: 36px;
+    }
+
+    .item__price {
+        .price__count {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 100%;
+            color: #303030;
+        }
+
+        margin-bottom: 30px;
+    }
+
+    .item__price::after {
+        content: '22 000 ₽';
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        text-decoration-line: line-through;
+        color: #8F8F8F;
+
+    }
+
+    .sale__marker {
+        border-radius: 15px;
+        position: absolute;
+        display: none;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 100%;
+
+        padding: 5px 8px 3px 8px;
+
+    }
+    .sale__marker_sale45{
+        display: inline-block;
+        background: #E24B33;
+        color: #FFFFFF;
+        top: 145px;
+        right: 406px;
+    }
+    .line {
+        width: 650px;
+        height: 0px;
+        border: 1px solid #F0F0F0;
+        margin-bottom: 30px;
+    }
+}
+
+
+.item__colors {
+    .colors__title {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #303030;
+        margin-bottom: 16px;
+    }
+
+    .colors {
+        display: flex;
+        width: 152px;
+        height: 32px;
+        gap: 8px;
+        margin-bottom: 30px;
+
+        .color {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #DADADA;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color_active {
+            border-color: #303030;
+        }
+
+        .color__btn {
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+        }
+
+        .color-grey {
+            background: #D9D9D9;
+        }
+
+        .color-yellow {
+            background: #F1CB7E;
+        }
+
+        .color-orange {
+            background: #EA8C48;
+        }
+
+        .color-salat {
+            background: #A7E492;
+        }
+    }
+}
+
+.item__size {
+    .tittle__group {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 17px;
+    }
+
+    .size__title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #303030;
+    }
+
+    .size__container {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 40px;
+
+        .size__option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 32px;
+            border: 1px solid #DADADA;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            text-transform: uppercase;
+        }
+
+        .size__option_picked {
+            background: #303030;
+            color: #FFFFFF;
+        }
+
+        .size__option_active {
+            border: 1px solid #303030;
+        }
+
+        .size__option_over {
+            opacity: 0.3;
+        }
+    }
+}
+
+.setting__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+
+    .btn__group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .setting__btn {
+            width: 400px;
+            height: 56px;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center;
+            font-weight: 500;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .btn__cart {
+            background: #303030;
+            color: #FFFFFF;
+        }
+
+        .btn__oneclick {
+            background: transparent;
+            border: 1px solid #303030;
+        }
+    }
+}
+
+.sidebtns {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .side__btn {
+        display: flex;
+        align-items: center;
+        justify-self: flex-start;
+        gap: 8px;
+        cursor: pointer;
+
+        .side__btn_save,
+        .side__btn_chart,
+        .sidebtn_share {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.today__wrapper {
+    position: relative;
+
+    .today__button-prev {
+        top: 0;
+        right: 62px;
+        transform: rotate(180deg);
+    }
+
+    .today__button-next {
+        top: 0;
+        right: 0;
+    }
+}

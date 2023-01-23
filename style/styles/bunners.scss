@@ -1,0 +1,69 @@
+.sale__banners {
+    padding: 60px 0;
+}
+
+.bunner__wrapper {
+    display: flex;
+    gap: 20px;
+
+    .sale_banner {
+        display: flex;
+        width: 420px;
+        height: 290px;
+        justify-content: space-between;
+        background: #F8F8F8;
+    }
+
+    .banner__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;
+        width: 198px;
+        height: 96px;
+        text-transform: uppercase;
+        color: #303030;
+        margin-top: 72px;
+        margin-left: 27px;
+        margin-bottom: 20px;
+    }
+
+    .banner_sale {
+        width: 194px;
+        height: 58px;
+    }
+
+    .sale__left {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+
+    .sale__count {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+
+    .banner_sale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        .sale__sp{
+            display: inline-block;
+        }
+    }
+    .banner_sale_50 {
+        background: #43807F;
+    }
+
+    .banner_sale_40 {
+        background: #E24B33;
+    }
+
+    .banner_sale_60 {
+        background: #E1A661;
+    }
+}

@@ -1,0 +1,36 @@
+.sale__timer {
+    position: absolute;
+    top: 120px;
+    right: 147px;
+    width: 224px;
+    height: 64px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.timer__cell {
+    width: 52px;
+    height: 40px;
+    background: #FFFFFF;
+    text-align: center;
+    vertical-align: text-bottom;
+    border: 1px solid #D0D0D0;
+}
+
+.timer__count {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #303030;
+}
+
+.timer__count_unit {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: center;
+    color: #303030;
+}
