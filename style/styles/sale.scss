@@ -164,6 +164,10 @@
 
 .swiper-wrapper {
     min-height: 492px;
+    transition: min-height 0.3s ease-in-out;
+}
+.swiper-wrapper_card-open {
+    min-height: 600px;
 }
 
 .card {

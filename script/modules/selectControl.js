@@ -8,6 +8,7 @@ export const castomSelect = ({
     if (forms) {
         // Toggle menu
         forms.addEventListener('click', e => {
+
             if (e.target.closest('.select__form')) {
                 const elem = e.target.closest('.select__form')
 

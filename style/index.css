@@ -240,6 +240,7 @@ h1, h2, h3, p {
   justify-content: space-between;
   width: 116px;
   height: 20px;
+  cursor: pointer;
 }
 
 .header__icons::after {
@@ -571,7 +572,7 @@ h1, h2, h3, p {
     margin-right: 30px;
   }
   .hero__text {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 @media (max-width: 422px) {
@@ -810,6 +811,11 @@ h1, h2, h3, p {
 
 .swiper-wrapper {
   min-height: 492px;
+  transition: min-height 0.3s ease-in-out;
+}
+
+.swiper-wrapper_card-open {
+  min-height: 600px;
 }
 
 .card {
