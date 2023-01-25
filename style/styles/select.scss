@@ -1,0 +1,113 @@
+.select {
+    position: relative;
+    width: 230px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.select__title {
+    display: flex;
+    align-items: center;
+    width: 197px;
+    height: 100%;
+    cursor: pointer;
+    gap: 8px;
+
+    .title__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #303030;
+    }
+}
+
+.location__icon {
+    display: inline-block;
+    background: url('../../assets/img/icons/marker.svg');
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+.drop {
+    display: inline-block;
+    position: absolute;
+    background: url('../../assets/img/icons/dropCity.svg') no-repeat;
+    height: 5.57px;
+    width: 7.57px;
+    right: 69px;
+    top: 18px;
+    border-radius: 0px;
+    object-fit: cover;
+}
+
+.dropdown {
+    position: absolute;
+    border: none;
+    outline: none;
+    flex-direction: column;
+    width: 197px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    gap: 20px;
+    z-index: 10;
+    display: none;
+    transition: 0.3s ease-in-out;
+    right: -3px;
+}
+
+.dropdown_active {
+    display: flex;
+}
+.select__title_active {
+    .drop {
+        transform: rotate(180deg);
+    }
+}
+.select__label {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #303030;
+}
+
+.select__label:hover {
+    background: #FAFAFA;
+}
+
+.checked {
+    position: absolute;
+    background-image: url('../../assets/img/icons/checked.svg');
+    width: 16px;
+    height: 16px;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.checked_active {
+    display: block
+}
+
+.select__label[checked="checked"]::after {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/img/icons/checked.svg');
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    display: none;
+}
+
+.select__input {
+    display: none;
+
+    &:checked+label {
+        background: #FAFAFA;
+    }
+
+    &:disabled+label {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+}

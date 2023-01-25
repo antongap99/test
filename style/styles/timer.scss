@@ -1,7 +1,7 @@
 .sale__timer {
     position: absolute;
-    top: 120px;
-    right: 147px;
+    top: 115px;
+    right: 100px;
     width: 224px;
     height: 64px;
     background-color: #F5F5F5;
@@ -33,4 +33,22 @@
     line-height: 100%;
     text-align: center;
     color: #303030;
+}
+
+
+@media (max-width: 1248px) {
+
+    .sale__timer {
+        top: 92px;
+        right: 104px;
+    }
+
+}
+
+
+@media (max-width: 476px) {
+    .sale__timer {
+        top: 110px;
+        right: 25px;
+    }
 }

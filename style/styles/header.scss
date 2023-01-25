@@ -7,25 +7,12 @@
     margin-bottom: 23px;
 }
 
-.location__icon {
-    display: inline-block;
-    background: url('../../assets/img/icons/marker.svg');
-    width: 16px;
-    height: 16px;
-    object-fit: cover;
-}
-
 .header__dropdown {
-    background: transparent;
-    border: none;
-    outline: none;
+    right: 32px;
 }
-
-
-.header__logo {
+.header__logo img {
     width: 183px;
     height: 52px;
-    background-image: url('../../assets/img/header/logo.svg');
 }
 
 .header__icons {
@@ -80,6 +67,7 @@
     flex-direction: row;
     gap: 60px;
     height: 100%;
+
     .catalog__tab {
         font-family: 'Inter';
         font-weight: 500;
@@ -96,6 +84,7 @@
     gap: 12px;
     justify-content: center;
     align-items: center;
+
     .catalog__search {
         width: 20px;
         height: 20px;
@@ -119,3 +108,100 @@
     padding-bottom: 20px;
 }
 
+.header__phone {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1225px) {
+
+    .catalog__tabs .catalog__tab {
+        font-size: 10px;
+    }
+
+    .catalog__wrapper {
+        gap: 20px;
+        background-color: #F0F0F0;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .catalog__tabs {
+        gap: 40px;
+    }
+
+    .header__logo {
+        width: 140px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .phone__link {
+        font-size: 13px;
+    }
+
+    .phone__icon {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+    }
+}
+
+.select {
+    position: relative;
+    width: 230px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+@media (max-width: 936px) {
+    .select {
+        position: relative;
+        width: 230px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 916px) {
+    .header__base {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        padding: 0 80px;
+        row-gap: 20px;
+        justify-content: center;
+        padding-top: 10px;
+
+        .header__select {
+            display: flex;
+            order: 1;
+            width: 230px;
+        }
+
+        .header__phone {
+            display: flex;
+            order: 2;
+        }
+    }
+    .header__base .header__select {
+        width: 179px;
+    }
+    .drop {
+        right: 20px;
+        top: 17px;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 748px) {
+
+    .catalog__tabs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+    }
+
+}

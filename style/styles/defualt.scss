@@ -20,6 +20,7 @@ img, svg {
 
 .wrapper {
     max-width: 1300px;
+    padding: 0 1px;
     margin: 0 auto;
 }
 
@@ -66,3 +67,20 @@ h1, h2, h3, p {
 .button-next:hover {
     background-color: #F5F5F5;
 }
+
+.button-prev:active,
+.button-next:active {
+    .slider-arrow {
+        transform: translateX(10px);
+        background-color: #F5F5F5;
+    }
+}
+
+@media (max-width: 1299px) {
+    .wrapper {
+        padding: 0 20px;
+        max-width: 1340px;
+    }
+
+}
+

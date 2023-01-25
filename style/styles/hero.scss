@@ -4,10 +4,13 @@
     width: 100%;
     height: 560px;
     justify-content: space-between;
+    min-width: 0;
 }
+
 .hero__sliper {
     background-color: #F8F8F8;
 }
+
 .slide__wrapper::after {
     content: '';
     background: url('../../assets/img/icons/diamond.svg') no-repeat;
@@ -64,6 +67,7 @@
         transition: 0.3s ease-in-out;
         cursor: pointer;
     }
+
     .hero__more:hover {
         background-color: #505050;
     }
@@ -105,3 +109,101 @@
 }
 
 
+@media (max-width: 1248px) {
+    .hero__text {
+        .hero__title {
+            margin-bottom: 40px;
+            font-size: 35px;
+            line-height: 100%;
+            color: #303030;
+        }
+
+        .hero__sale {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: #303030;
+        }
+    }
+
+    .hero_img {
+        display: block;
+        width: 400px;
+        height: 400px;
+        margin-right: 36px;
+        align-self: center;
+    }
+
+    .slide__wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 954px) {
+    .hero__text {
+        .hero__title {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 100%;
+            color: #303030;
+        }
+
+        .hero__sale {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #303030;
+        }
+
+        .hero__more {
+            width: 145px;
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+
+    .hero_img {
+        display: block;
+        width: 350px;
+        height: 350px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 746px) {
+    .slide__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .hero_img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-right: 30px;
+    }
+
+    .hero__text {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 422px) {
+    .hero__button-next {
+        top: 60px;
+        right: 25px;
+        transform: translateY(-27px);
+    }
+
+    .hero__button-prev {
+        transform: rotate(180deg) translateY(27px);
+        top: 60px;
+        left: 24px;
+    }
+
+}

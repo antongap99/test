@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/styles/swiper.css" />
+    <link rel="stylesheet" href="./style/index.css">
+    <script defer src="./script/index.js" type="module"></script>
+    <title>Goldy store</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="header__base">
+                <form class="header__select select__form">
+                    <div class="header__select select__wrapper select">
+                        <div class="select__title">
+                            <div for="city-select" class="location__icon"></div>
+                            <span class="title__text">Санкт-Петербург</span>
+                            <div for="city-select" class="drop"></div>
+                        </div>
+                        <div class="header__dropdown dropdown">
+                            <input id="city1" class="select__input" type="radio" name="city" checked />
+                            <label for="city1" class="select__label">
+                                <span class="label__text"> Санкт-Петербург</span>
+                                <div class="checked"></div>
+                            </label>
+                            <input id="city2" class="select__input" type="radio" name="city" />
+                            <label for="city2" class="select__label">
+                                <span class="label__text">Москва</span>
+                                <div class="checked"></div>
+                            </label>
+                            <input id="city3" class="select__input" type="radio" name="city" />
+                            <label for="city3" class="select__label">
+                                <span class="label__text"> Нижний Новгород </span>
+                                <div class="checked"></div>
+                            </label>
+                            <input id="city4" class="select__input" type="radio" name="city" />
+                            <label for="city4" class="select__label">
+                                <span class="label__text"> Ростов-на-Дону </span>
+                                <div class="checked"></div>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="header__phone">
+                    <img src="./assets/img/icons/phone-call.svg" alt="иконка телефона" class="phone__icon">
+                    <a href="tel:8 800 785-25-35" class="phone__link">8 800 785-25-35</a>
+                </div>
+                <div class="header__logo">
+                    <img src="'../../assets/img/header/logo.svg" alt="logo">
+                </div>
+                <div class="header__login">
+                    <span class="login__signup">Вход</span>
+                    <span class="separator">/</span>
+                    <spam class="login__signin">Регистрация</spam>
+                </div>
+                <div class="header__icons">
+                    <div class="header__icon header__icon_favorite"></div>
+                    <div class="header__icon header__icon_chart"></div>
+                    <div class="header__icon header__icon_bag"></div>
+                </div>
+            </div>
+            <div class="header__catalog">
+                <div class="catalog__wrapper">
+                    <ul class="catalog__tabs">
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">Каталог</a>
+                        </li>
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">Акции</a>
+                        </li>
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">Бренды</a>
+                        </li>
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">Магазины</a>
+                        </li>
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">О нас</a>
+                        </li>
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">Доставка и оплата</a>
+                        </li>
+                        <li class="catalog__tab">
+                            <a href="#" class="tab__link">Статьи</a>
+                        </li>
+                    </ul>
+                    <div class="catalog__search">
+                        <button class="search__btn">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.2 8.5C13.2 11.0957 11.0957 13.2 8.5 13.2C5.90426 13.2 3.8 11.0957 3.8 8.5C3.8 5.90426 5.90426 3.8 8.5 3.8C11.0957 3.8 13.2 5.90426 13.2 8.5ZM12.062 13.938C11.039 14.6094 9.81512 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5C15 10.1561 14.3806 11.6676 13.3609 12.8153L17.2728 16.7272L16 18L12 14L12.062 13.938Z"
+                                    fill="#303030" />
+                            </svg>
+                        </button>
+                        <input type="text" placeholder="Поиск по сайту" class="search__input">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="main__wrapper wrapper">
+            <section class="hero">
+                <div class="swiper hero__sliper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide__wrapper">
+                                <div class="hero__text">
+                                    <p class="hero__sale">Суперскидка до 60%</p>
+                                    <h1 class="hero__title">НА БРИЛЛИАНТЫ</h1>
+                                    <button class="hero__more">Подробнее</button>
+                                </div>
+                                <img src="./assets/img/hero/hero_ring.png" alt="золотое кольцо" class="hero_img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <button class="button-prev hero__button-prev">
+                        <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button class="button-next hero__button-next">
+                        <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+
+                    <div class="pagination">
+                        <button class="pagination__item pagination__item_active"></button>
+                        <button class="pagination__item"></button>
+                        <button class="pagination__item"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="popular">
+                <div class="popular__wrapper">
+                    <h2 class="popular__title">Популярные категории</h2>
+                    <ul class="popular__category">
+                        <li class="popular__item">
+                            <div class="item__layout">
+                                <div class="img__wrapper">
+                                    <img src="./assets/img/popular_sec/rings.png" alt="rings" class="item__img">
+                                </div>
+                                <p class="item__capture">Серьги</p>
+                            </div>
+                        </li>
+                        <li class="popular__item">
+                            <div class="item__layout">
+                                <div class="img__wrapper">
+                                    <img src="./assets/img/popular_sec/earrings.png" alt="earrings" class="item__img">
+                                </div>
+                                <p class="item__capture">Помолвочные кольца</p>
+                            </div>
+                        </li>
+                        <li class="popular__item">
+                            <div class="item__layout">
+                                <div class="img__wrapper">
+                                    <img src="./assets/img/popular_sec/anotherRingspng.png" alt="anotherRings"
+                                        class="item__img">
+                                </div>
+                                <p class="item__capture">Браслеты</p>
+                            </div>
+                        </li>
+                        <li class="popular__item">
+                            <div class="item__layout">
+                                <div class="img__wrapper">
+                                    <img src="./assets/img/popular_sec/braslet.png" alt="braslet" class="item__img">
+                                </div>
+                                <p class="item__capture">Колье и подвески</p>
+                            </div>
+                        </li>
+                        <li class="popular__item">
+                            <div class="item__layout">
+                                <div class="img__wrapper">
+                                    <img src="./assets/img/popular_sec/necklace.png" alt="necklace" class="item__img">
+                                </div>
+                                <p class="item__capture">Часы</p>
+                            </div>
+                        </li>
+                        <li class="popular__item">
+                            <div class="item__layout">
+                                <div class="img__wrapper">
+                                    <img src="./assets/img/popular_sec/watch.png" alt="watch" class="item__img">
+                                </div>
+                                <p class="item__capture">Кольца</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sale">
+                <div class="sale__wrapper">
+                    <h2 class="sale__title">Распродажа</h2>
+                    <div class="sale__tabs">
+                        <div class="sale__tab sale__tab_active">Кольца</div>
+                        <div class="sale__tab">Серьги</div>
+                        <div class="sale__tab">Браслеты</div>
+                        <div class="sale__tab">Часы</div>
+                    </div>
+                    <div class="sale__products">
+                        <div class="swiper sale__swiper">
+                            <div class="swiper-wrapper cards">
+                                <div class="swiper-slide card">
+                                    <span class="sale__marker sale__marker_active">Sale</span>
+                                    <span class="sale__marker sale__marker_sale45">-45&#37;</span>
+                                    <div class="card__favorite-icon">
+                                        <svg class="favorite__svg" width="24" height="24" viewbox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="card__eye-icon">
+                                        <svg class="eye__svg" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__img">
+                                        <img src="./assets/img/sale_sec/ring1.png" alt="sale_ring" class="sale__ring">
+                                    </div>
+                                    <div class="card_price sale45">
+                                        <span class="item-price">41 000 &#8381</span>
+                                        <span class="old-price">65 000 &#8381</span>
+                                    </div>
+                                    <p class="card_caption">Стильное кольцо из белого золота c бриллиантами</p>
+                                    <div class="pagination">
+                                        <button class="pagination__item pagination__item_active"></button>
+                                        <button class="pagination__item"></button>
+                                        <button class="pagination__item"></button>
+                                    </div>
+                                    <div class="select__forms">
+                                        <form class="sale__select_metal select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Белое золото</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="1" class="select__input" type="radio" name="city" checked />
+                                                    <label for="1" class="select__label">
+                                                        <span class="label__text">Белое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="2" class="select__input" type="radio" name="city" />
+                                                    <label for="2" class="select__label">
+                                                        <span class="label__text">Желтое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="3" class="select__input" type="radio" name="city" />
+                                                    <label for="3" class="select__label">
+                                                        <span class="label__text">Серебро</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form class="sale__select_size select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Размер: 16</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="111" class="select__input" type="radio" name="city" checked />
+                                                    <label for="111" class="select__label">
+                                                        <span class="label__text">Размер: 16</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="112" class="select__input" type="radio" name="city" />
+                                                    <label for="112" class="select__label">
+                                                        <span class="label__text">Размер: 14</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="113" class="select__input" type="radio" name="city" />
+                                                    <label for="113" class="select__label">
+                                                        <span class="label__text">Размер: 12</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide card">
+                                    <span class="sale__marker">Sale</span>
+                                    <div class="card__favorite-icon">
+                                        <svg class="favorite__svg" width="24" height="24" viewbox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="card__eye-icon">
+                                        <svg class="eye__svg" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__img">
+                                        <img src="./assets/img/sale_sec/saled_ring2.png" alt="sale_ring" class="sale__ring">
+                                    </div>
+                                    <div class="card_price sale45">
+                                        <span class="item-price">56 000 &#8381</span>
+                                        <span class="old-price"></span>
+                                    </div>
+                                    <p class="card_caption">Стильное кольцо из белого золота c бриллиантами</p>
+                                    <div class="pagination">
+                                        <button class="pagination__item pagination__item_active"></button>
+                                        <button class="pagination__item"></button>
+                                        <button class="pagination__item"></button>
+                                    </div>
+                                    <div class="select__forms">
+                                        <form class="sale__select_metal select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Белое золото</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="5" class="select__input" type="radio" name="city" checked />
+                                                    <label for="5" class="select__label">
+                                                        <span class="label__text">Белое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="6" class="select__input" type="radio" name="city" />
+                                                    <label for="6" class="select__label">
+                                                        <span class="label__text">Желтое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="7" class="select__input" type="radio" name="city" />
+                                                    <label for="7" class="select__label">
+                                                        <span class="label__text">Серебро</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form class="sale__select_size select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Размер: 16</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="121" class="select__input" type="radio" name="city" checked />
+                                                    <label for="121" class="select__label">
+                                                        <span class="label__text">Размер: 16</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="131" class="select__input" type="radio" name="city" />
+                                                    <label for="131" class="select__label">
+                                                        <span class="label__text">Размер: 14</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="141" class="select__input" type="radio" name="city" />
+                                                    <label for="141" class="select__label">
+                                                        <span class="label__text">Размер: 12</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide card">
+                                    <span class="sale__marker">Sale</span>
+                                    <div class="card__favorite-icon">
+                                        <svg class="favorite__svg" width="24" height="24" viewbox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+
+                                    </div>
+                                    <div class="card__eye-icon">
+                                        <svg class="eye__svg" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__img">
+                                        <img src="./assets/img/sale_sec/sale_ring3.png" alt="sale_ring" class="sale__ring">
+                                    </div>
+                                    <div class="card_price sale45">
+                                        <span class="item-price">37 500 &#8381</span>
+                                        <span class="old-price"></span>
+                                    </div>
+                                    <p class="card_caption">Стильное кольцо из белого золота c бриллиантами</p>
+
+                                    <div class="pagination">
+                                        <button class="pagination__item pagination__item_active"></button>
+                                        <button class="pagination__item"></button>
+                                        <button class="pagination__item"></button>
+                                    </div>
+                                    <div class="select__forms">
+                                        <form class="sale__select_metal select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Белое золото</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="8" class="select__input" type="radio" name="city" checked />
+                                                    <label for="8" class="select__label">
+                                                        <span class="label__text">Белое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="9" class="select__input" type="radio" name="city" />
+                                                    <label for="9" class="select__label">
+                                                        <span class="label__text">Желтое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="10" class="select__input" type="radio" name="city" />
+                                                    <label for="10" class="select__label">
+                                                        <span class="label__text">Серебро</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form class="sale__select_size select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Размер: 16</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="321" class="select__input" type="radio" name="city" checked />
+                                                    <label for="321" class="select__label">
+                                                        <span class="label__text">Размер: 16</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="322" class="select__input" type="radio" name="city" />
+                                                    <label for="322" class="select__label">
+                                                        <span class="label__text">Размер: 14</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="323" class="select__input" type="radio" name="city" />
+                                                    <label for="323" class="select__label">
+                                                        <span class="label__text">Размер: 12</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide card">
+                                    <span class="sale__marker">Sale</span>
+                                    <div class="card__favorite-icon">
+                                        <svg class="favorite__svg" width="24" height="24" viewbox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__eye-icon">
+                                        <svg class="eye__svg" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__img">
+                                        <img src="./assets/img/sale_sec/sale_ring4.png" alt="sale_ring" class="sale__ring">
+                                    </div>
+                                    <div class="card_price sale45">
+                                        <span class="item-price">39 200 &#8381</span>
+                                        <span class="old-price"></span>
+                                    </div>
+                                    <p class="card_caption">Стильное кольцо из белого золота c бриллиантами</p>
+                                    <div class="pagination">
+                                        <button class="pagination__item pagination__item_active"></button>
+                                        <button class="pagination__item"></button>
+                                        <button class="pagination__item"></button>
+                                    </div>
+                                    <div class="select__forms">
+                                        <form class="sale__select_metal select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Белое золото</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="11" class="select__input" type="radio" name="city" checked />
+                                                    <label for="11" class="select__label">
+                                                        <span class="label__text">Белое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="12" class="select__input" type="radio" name="city" />
+                                                    <label for="12" class="select__label">
+                                                        <span class="label__text">Желтое золото</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="13" class="select__input" type="radio" name="city" />
+                                                    <label for="13" class="select__label">
+                                                        <span class="label__text">Серебро</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form class="sale__select_size select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Размер: 16</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="121" class="select__input" type="radio" name="city" checked />
+                                                    <label for="121" class="select__label">
+                                                        <span class="label__text">Размер: 16</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="122" class="select__input" type="radio" name="city" />
+                                                    <label for="122" class="select__label">
+                                                        <span class="label__text">Размер: 14</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                    <input id="123" class="select__input" type="radio" name="city" />
+                                                    <label for="123" class="select__label">
+                                                        <span class="label__text">Размер: 12</span>
+                                                        <div class="checked"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="pagination"></div>
+                        </div>
+                    </div>
+                    <button class="button-prev sale__button-prev">
+                        <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button class="button-next sale__button-next">
+                        <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <div class="bunner__wrapper">
+                        <div class="sale_banner">
+                            <div class="banner__text">
+                                <h3 class="banner__title">Скидки на все украшения с бриллиантами</h3>
+                                <div class="banner_sale banner_sale_50">
+                                    <span class="sale__sp sale__left">До</span>
+                                    <span class="sale__sp sale__count">-50%</span>
+                                </div>
+                            </div>
+                            <div class="bunner__img">
+                                <img src="./assets/img/sale_sec/bunner-img1.png" alt="скидка 50%">
+                            </div>
+                        </div>
+                        <div class="sale_banner">
+                            <div class="banner__text">
+                                <h3 class="banner__title">Скидки на кольца и браслеты</h3>
+                                <div class="banner_sale banner_sale_40">
+                                    <span class="sale__sp sale__left">До</span>
+                                    <span class="sale__sp sale__count">-40%</span>
+                                </div>
+                            </div>
+                            <div class="bunner__img">
+                                <img src="./assets/img/sale_sec/banner_img2.png" alt="скидка 40%">
+                            </div>
+                        </div>
+                        <div class="sale_banner">
+                            <div class="banner__text">
+                                <h3 class="banner__title">снижение цен на обручальные кольца</h3>
+                                <div class="banner_sale banner_sale_60">
+                                    <span class="sale__sp sale__left">До</span>
+                                    <span class="sale__sp sale__count">-60%</span>
+                                </div>
+                            </div>
+                            <div class="bunner__img">
+                                <img class="bunner__img" src="./assets/img/sale_sec/bunner-img3.png" alt="скидка 60%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="today">
+                <div class="today__wrapper">
+                    <h3 class="today__title">Товар дня</h3>
+                    <div class="swiper today__items">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide today__item">
+                                <div class="item__wrapper">
+                                    <div class="item_img">
+                                        <img src="./assets/img/today_sec/today_img.png" alt="today_img"
+                                            class="today__item_img">
+                                        <div class="item__marker item__marker_new">New</div>
+                                        <div class="item__marker item__marker_heat">Хит</div>
+                                        <div class="item__marker item__marker_sale">Sale</div>
+                                    </div>
+                                    <div class="today__item-info">
+                                        <div class="item__rating">
+                                            <span class="rating__stars">
+                                            </span>
+                                            <span class="review">4,2</span>
+                                        </div>
+                                        <h3 class="item__title">Кольцо из золота с бриллиантами</h3>
+                                        <div class="item__article">
+                                            <p class="article__dis">Артикул:<span class="item__id"
+                                                    data-itemid="1012076">1012076</span>
+                                            </p>
+                                        </div>
+                                        <div class="item__price">
+                                            <span class="price__count">22 000 &#8381</span>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item__setting">
+                                            <span class="sale__marker sale__marker_sale45">-45&#37;</span>
+                                            <div class="item__setting sale__timer">
+                                                <p class="timer__cell timer__hours">
+                                                    <span class="timer__count timer__count_hour">12</span>
+                                                    <span class="timer__count_unit">часов</span>
+                                                </p>
+                                                <div>:</div>
+                                                <p class="timer__cell timer__minutes">
+                                                    <span class="timer__count timer__count_minute">12</span>
+                                                    <span class="timer__count_unit">минут</span>
+                                                </p>
+                                                <div>:</div>
+                                                <p class="timer__cell timer__seconds">
+                                                    <span class="timer__count timer__count_second">51</span>
+                                                    <span class="timer__count_unit">секунд</span>
+                                                </p>
+                                            </div>
+                                            <div class="item__colors">
+                                                <p class="colors__title">цвет</p>
+                                                <ul class="colors">
+                                                    <li class="color color-grey">
+                                                        <button class="color__btn"></button>
+                                                    </li>
+                                                    <li class="color  color_active">
+                                                        <button class="color__btn color-yellow"></button>
+                                                    </li>
+                                                    <li class="color">
+                                                        <button class="color__btn color-orange"></button>
+                                                    </li>
+                                                    <li class="color ">
+                                                        <button class="color__btn color-salat"></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="item__size">
+                                                <div class="tittle__group">
+                                                    <p class="size__title">размер</p>
+                                                    <svg width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="9" cy="9" r="9" fill="#F0F0F0" />
+                                                        <path
+                                                            d="M8.25 10.4901H9.46875V10.4091C9.4858 9.42898 9.76705 8.99006 10.4915 8.54261C11.2543 8.08239 11.723 7.43466 11.723 6.47585C11.723 5.09091 10.6747 4.15341 9.1108 4.15341C7.67472 4.15341 6.52415 4.9929 6.46875 6.52699H7.7642C7.81534 5.62358 8.45881 5.22727 9.1108 5.22727C9.83523 5.22727 10.4233 5.70881 10.4233 6.46307C10.4233 7.09801 10.027 7.54545 9.51989 7.8608C8.72727 8.34659 8.25852 8.82812 8.25 10.4091V10.4901ZM8.89347 13.081C9.35795 13.081 9.74574 12.7017 9.74574 12.2287C9.74574 11.7642 9.35795 11.3807 8.89347 11.3807C8.42472 11.3807 8.04119 11.7642 8.04119 12.2287C8.04119 12.7017 8.42472 13.081 8.89347 13.081Z"
+                                                            fill="#303030" />
+                                                    </svg>
+                                                </div>
+                                                <div class="size__container">
+                                                    <div class="size__option size__option_picked"><span>16,5</span></div>
+                                                    <div class="size__option size__option_active"><span>17,5</span></div>
+                                                    <div class="size__option"><span>18,5</span></div>
+                                                    <div class="size__option"><span>19</span></div>
+                                                    <div class="size__option"><span>19,5</span></div>
+                                                    <div class="size__option"><span>19,5</span></div>
+                                                    <div class="size__option"><span>18,5</span></div>
+                                                    <div class="size__option"><span>19</span></div>
+                                                    <div class="size__option size__option_over"><span>19,5</span></div>
+                                                    <div class="size__option size__option_over"><span>19,5</span></div>
+                                                </div>
+                                                <div class="setting__btns">
+                                                    <div class="btn__group">
+                                                        <button class="btn setting__btn btn__cart">в корзину</button>
+                                                        <button class="btn setting__btn btn__oneclick">купить в 1
+                                                            клик</button>
+                                                    </div>
+                                                    <div class="sidebtns">
+                                                        <div class="side__btn">
+                                                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"
+                                                                    fill="#C9C9C9" />
+                                                            </svg>
+                                                            <button class="side__btn_save">
+                                                                <span class="btn__title">Сохранить</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="side__btn">
+                                                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <line x1="5.1" y1="10" x2="5.1" y2="17" stroke="#C9C9C9"
+                                                                    stroke-width="2.2" />
+                                                                <line x1="10.1" y1="2" x2="10.1" y2="17" stroke="#C9C9C9"
+                                                                    stroke-width="2.2" />
+                                                                <line x1="15.1" y1="5" x2="15.1" y2="17" stroke="#C9C9C9"
+                                                                    stroke-width="2.2" />
+                                                            </svg>
+                                                            <button class="side__btn_chart">
+                                                                <span class="btn__title">Сравнить</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="side__btn">
+                                                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.6667 4.58329C11.6667 2.97246 12.9725 1.66663 14.5833 1.66663C16.1942 1.66663 17.5 2.97246 17.5 4.58329C17.5 6.19411 16.1942 7.49996 14.5833 7.49996C13.769 7.49996 13.0327 7.16626 12.5036 6.62816L8.22756 9.21884C8.29649 9.46745 8.33333 9.7294 8.33333 9.99996C8.33333 10.243 8.3036 10.4791 8.24758 10.7049L12.6009 13.2773C13.1212 12.7949 13.8178 12.5 14.5833 12.5C16.1942 12.5 17.5 13.8058 17.5 15.4166C17.5 17.0274 16.1942 18.3333 14.5833 18.3333C12.9725 18.3333 11.6667 17.0274 11.6667 15.4166C11.6667 15.1736 11.6964 14.9375 11.7524 14.7118L7.39908 12.1394C6.87875 12.6217 6.18214 12.9166 5.41667 12.9166C3.80585 12.9166 2.5 11.6108 2.5 9.99996C2.5 8.38914 3.80585 7.08329 5.41667 7.08329C6.15373 7.08329 6.82695 7.3567 7.34042 7.80763L11.7222 5.15284C11.6858 4.96864 11.6667 4.7782 11.6667 4.58329ZM14.5833 3.33329C13.893 3.33329 13.3333 3.89294 13.3333 4.58329C13.3333 5.27364 13.893 5.83329 14.5833 5.83329C15.2737 5.83329 15.8333 5.27364 15.8333 4.58329C15.8333 3.89294 15.2737 3.33329 14.5833 3.33329ZM5.41667 8.74996C4.72632 8.74996 4.16667 9.30961 4.16667 9.99996C4.16667 10.6903 4.72632 11.25 5.41667 11.25C6.10701 11.25 6.66667 10.6903 6.66667 9.99996C6.66667 9.30961 6.10701 8.74996 5.41667 8.74996ZM14.5833 14.1666C13.893 14.1666 13.3333 14.7263 13.3333 15.4166C13.3333 16.107 13.893 16.6666 14.5833 16.6666C15.2737 16.6666 15.8333 16.107 15.8333 15.4166C15.8333 14.7263 15.2737 14.1666 14.5833 14.1666Z"
+                                                                    fill="#C9C9C9" />
+                                                            </svg>
+                                                            <button class="sidebtn_share">
+                                                                <span class="btn__title">Поделиться</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-prev today__button-prev">
+                        <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button class="button-next today__button-next">
+                        <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464465C12.9763 0.269203 12.6597 0.269203 12.4645 0.464465C12.2692 0.659727 12.2692 0.97631 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.73079 12.9763 7.73079 13.1716 7.53553L16.3536 4.35355ZM4.37114e-08 4.5L16 4.5L16 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="articles">
+                <div class="articles__wrapper">
+                    <h2 class="articles__title">Статьи</h2>
+                    <div class="articles__cards card__container">
+                        <div class="article__card">
+                            <img src="./assets/img/articles/article1.jpg" alt="artcle" class="card__img">
+                            <p class="article__date">21 сентября 2021</p>
+                            <p class="card__title">Обручальные кольца: тренды 2021</p>
+                        </div>
+                        <div class="article__card">
+                            <img src="./assets/img/articles/article2.jpg" alt="artcle" class="card__img">
+                            <p class="article__date">25 сентября 2021</p>
+                            <p class="card__title">Главные ювелирные тренды года</p>
+                        </div>
+                        <div class="article__card">
+                            <img src="./assets/img/articles/article3.jpg" alt="artcle" class="card__img">
+                            <p class="article__date">21 сентября 2021</p>
+                            <p class="card__title">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+                        </div>
+                        <div class="article__card">
+                            <img src="./assets/img/articles/article4.jpg" alt="artcle" class="card__img">
+                            <p class="article__date">21 сентября 2021</p>
+                            <p class="card__title">Как отличить золото от подделки: 10 практических советов</p>
+                        </div>
+                        <div class="articles__readmore">
+                            <span>Читать все</span>
+                            <svg width="27" height="12" viewbox="0 0 27 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.5303 6.53033C26.8232 6.23744 26.8232 5.76257 26.5303 5.46967L21.7574 0.696701C21.4645 0.403808 20.9896 0.403808 20.6967 0.696701C20.4038 0.989594 20.4038 1.46447 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM-6.55671e-08 6.75L26 6.75L26 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -56,3 +56,40 @@
         }
     }
 }
+
+@media (max-width: 1298px) {
+    .articles__cards {
+        display: grid;
+        grid-template-columns: 310px 310px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .articles__title {
+        text-align: center;
+        font-size: 30px
+    }
+}
+
+@media (max-width: 690px) {
+    .articles__cards {
+        display: grid;
+        grid-template-columns: 310px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .articles__title {
+        text-align: center;
+        font-size: 30px
+    }
+    .articles .articles__wrapper .articles__readmore {
+        display: flex;
+        align-items: center;
+        position: static;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #303030;
+        margin-top: 20px;
+    }
+}

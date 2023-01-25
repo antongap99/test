@@ -14,7 +14,7 @@
 .popular__category {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 18px;
 }
 
 .popular__item {
@@ -44,5 +44,44 @@
         font-size: 16px;
         line-height: 100%;
         color: #303030;
+    }
+}
+
+@media (max-width: 1297px) {
+    .popular {
+        padding: 30px 0;
+    }
+
+    .popular__category {
+        gap: 20px;
+        padding: 0 210px;
+        justify-content: center;
+    }
+
+    .popular__title {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .popular {
+        padding: 30px 0;
+    }
+
+    .popular__category {
+        padding: 0 60px;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .popular__title {
+        font-size: 25px;
+    }
+    .popular__category {
+        padding: 0 30px;
     }
 }
