@@ -3,7 +3,7 @@ export const saleControl = () => {
     const cardsContainer = document.querySelector('.cards');
     cardsContainer.addEventListener('click', (e) => {
         const target = e.target
-        const wrapper = document.querySelector('.cards');
+        const wrapper = document.querySelector('.sale__products');
         if(target.closest('.card') &&
         !target.closest('.card').classList.contains('card_active')){
             const cards = cardsContainer.querySelectorAll('.card');
@@ -11,10 +11,10 @@ export const saleControl = () => {
                 cards[i].classList.remove('card_active');
             }
             e.target.closest('.card').classList.add('card_active');
-            wrapper.classList.add('swiper-wrapper_card-open');
+            wrapper.classList.add('sale__products-open');
         } else if(e.target.closest('.card') && !e.target.closest('.select__forms')) {
             e.target.closest('.card').classList.remove('card_active');
-            wrapper.classList.remove('swiper-wrapper_card-open');
+            wrapper.classList.remove('sale__products-open');
         }
 
     })

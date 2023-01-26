@@ -42,8 +42,6 @@
 
 .dropdown {
     position: absolute;
-    border: none;
-    outline: none;
     flex-direction: column;
     width: 197px;
     background: #FFFFFF;
@@ -52,8 +50,7 @@
     gap: 20px;
     z-index: 10;
     display: none;
-    transition: 0.3s ease-in-out;
-    right: -3px;
+    right: 5px;
 }
 
 .dropdown_active {
@@ -111,3 +108,12 @@
         pointer-events: none;
     }
 }
+
+@media (max-width: 936px) {
+    .dropdown {
+        width: 197px;
+        padding: 20px;
+        gap: 16px;
+    }
+}
+

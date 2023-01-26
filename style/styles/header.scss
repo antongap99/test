@@ -10,6 +10,7 @@
 .header__dropdown {
     right: 32px;
 }
+
 .header__logo img {
     width: 183px;
     height: 52px;
@@ -163,6 +164,10 @@
         margin: 0 auto;
     }
 
+    .header__dropdown {
+        right: 0;
+        top: 40px;
+    }
 }
 
 @media (max-width: 916px) {
@@ -185,14 +190,21 @@
             order: 2;
         }
     }
+
     .header__base .header__select {
         width: 179px;
     }
+
     .drop {
         right: 20px;
         top: 17px;
         border-radius: 0px;
         object-fit: cover;
+    }
+
+    .header__dropdown {
+        right: 0;
+        top: 38px;
     }
 }
 
@@ -205,4 +217,25 @@
         height: 100%;
     }
 
+    .header__login {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header__base {
+        padding: 0  96px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 548px) {
+    .header__base {
+        padding: 0 120px;
+    }
+}
+@media (max-width: 430px) {
+    .header__base {
+        padding: 0 60px;
+    }
 }

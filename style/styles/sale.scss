@@ -38,12 +38,8 @@
         background: #DDDDDD;
     }
 
-    .sale__tab:active {
-        background: #303030;
-        color: #FFFFFF;
-    }
 
-    .sale__tab.sale__tab_active {
+    .sale__tab.sale__tab_active,.sale__tab:active, .sale__tab:focus {
         background: #303030;
         color: #FFFFFF;
     }
@@ -162,12 +158,13 @@
     }
 }
 
-.swiper-wrapper {
+.sale__products {
     min-height: 492px;
     transition: min-height 0.3s ease-in-out;
 }
-.swiper-wrapper_card-open {
+.sale__products.sale__products-open {
     min-height: 600px;
+    transition: min-height 0.3s ease-in-out;
 }
 
 .card {
@@ -243,14 +240,10 @@
 }
 
 @media (max-width: 1299px) {
-    .cards {
-        justify-content: center;
-        gap: 20px;
-    }
 
     .card {
-        width: 250px;
-        height: 310px;
+        max-width: 250px;
+        max-height: 310px;
 
         .pagination {
             width: 40px;
