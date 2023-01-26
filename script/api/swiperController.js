@@ -1,18 +1,20 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 const swiperController = () => {
     new Swiper('.sale__swiper', {
-        loop: true,
-        // loopAdditionalSlides: 15,
         breakpoints: {
-            490: {
-                slidesPerView: 1,
-            },
-            1260: {
-                slidesPerView: 2,
-            },
-            1300: {
-                slidesPerView: 4,
-            }
+            // 490: {
+            //     slidesPerView: 1,
+            //     spaceBetween: 100
+            // },
+            // 1260: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 50
+
+            // },
+        //     1298: {
+        //         slidesPerView: 4,
+        //         spaceBetween: 20
+        //     }
         },
         navigation: {
             nextEl: '.sale__button-next',

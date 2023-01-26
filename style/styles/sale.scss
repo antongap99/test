@@ -4,6 +4,10 @@
     z-index: auto;
 }
 
+.swiper {
+    width: 1300px;
+}
+
 .sale__title {
     font-weight: 400;
     font-size: 40px;
@@ -22,6 +26,7 @@
     max-width: 470px;
     margin-bottom: 36px;
     flex-wrap: wrap;
+
     .sale__tab {
         padding: 13px 30px;
         font-weight: 400;
@@ -39,7 +44,9 @@
     }
 
 
-    .sale__tab.sale__tab_active,.sale__tab:active, .sale__tab:focus {
+    .sale__tab.sale__tab_active,
+    .sale__tab:active,
+    .sale__tab:focus {
         background: #303030;
         color: #FFFFFF;
     }
@@ -162,6 +169,7 @@
     min-height: 492px;
     transition: min-height 0.3s ease-in-out;
 }
+
 .sale__products.sale__products-open {
     min-height: 600px;
     transition: min-height 0.3s ease-in-out;
@@ -240,10 +248,13 @@
 }
 
 @media (max-width: 1299px) {
+    .swiper {
+        width: 1000px;
+    }
 
     .card {
         max-width: 250px;
-        max-height: 310px;
+        height: 310px;
 
         .pagination {
             width: 40px;
@@ -257,6 +268,9 @@
     }
 
     .cards {
+        justify-content: center;
+        gap: 155px;
+
         .card_price {
             font-size: 12px;
         }
@@ -351,8 +365,18 @@
         margin: 0 auto 130px
     }
 
+    .swiper {
+        width: 550px;
+    }
+
 }
 
+@media (max-width: 611px) {
+
+    .swiper {
+        width: 400px;
+    }
+}
 
 @media (max-width: 510px) {
 
@@ -367,8 +391,13 @@
             left: 94px;
         }
     }
+
+    .swiper {
+        width: 400px;
+    }
 }
-@media (max-width: 372px) {
+
+@media (max-width: 445px) {
 
     .sale__wrapper {
         .sale__button-next {
@@ -380,5 +409,8 @@
             top: 198px;
             left: 55px;
         }
+    }
+    .swiper {
+        width: 280px;
     }
 }
