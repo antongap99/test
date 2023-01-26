@@ -703,10 +703,6 @@ h1, h2, h3, p {
   z-index: auto;
 }
 
-.swiper {
-  width: 1300px;
-}
-
 .sale__title {
   font-weight: 400;
   font-size: 40px;
@@ -842,6 +838,17 @@ h1, h2, h3, p {
   right: 0;
 }
 
+.sale__swiper {
+  width: 1300px;
+  height: 100%;
+  transition: height 0.3s ease-in-out;
+}
+
+.sale__swiper.sale__swiper-open {
+  height: 600px;
+  transition: height 0.3s ease-in-out;
+}
+
 .sale__products {
   min-height: 492px;
   transition: min-height 0.3s ease-in-out;
@@ -912,7 +919,7 @@ h1, h2, h3, p {
 }
 
 @media (max-width: 1299px) {
-  .swiper {
+  .sale__swiper {
     width: 1000px;
   }
   .card {
@@ -929,7 +936,6 @@ h1, h2, h3, p {
   }
   .cards {
     justify-content: center;
-    gap: 155px;
   }
   .cards .card_price {
     font-size: 12px;
@@ -1003,12 +1009,12 @@ h1, h2, h3, p {
   .sale__tabs {
     margin: 0 auto 130px;
   }
-  .swiper {
+  .sale__swiper {
     width: 550px;
   }
 }
 @media (max-width: 611px) {
-  .swiper {
+  .sale__swiper {
     width: 400px;
   }
 }
@@ -1021,9 +1027,6 @@ h1, h2, h3, p {
     top: 198px;
     left: 94px;
   }
-  .swiper {
-    width: 400px;
-  }
 }
 @media (max-width: 445px) {
   .sale__wrapper .sale__button-next {
@@ -1034,8 +1037,8 @@ h1, h2, h3, p {
     top: 198px;
     left: 55px;
   }
-  .swiper {
-    width: 280px;
+  .sale__swiper {
+    width: 100%;
   }
 }
 .sale__banners {

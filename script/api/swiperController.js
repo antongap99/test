@@ -2,19 +2,13 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 const swiperController = () => {
     new Swiper('.sale__swiper', {
         breakpoints: {
-            // 490: {
-            //     slidesPerView: 1,
-            //     spaceBetween: 100
-            // },
-            // 1260: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 50
-
-            // },
-        //     1298: {
-        //         slidesPerView: 4,
-        //         spaceBetween: 20
-        //     }
+            637: {
+                slidesPerView: 1,
+                spaceBetween: 100
+            },
+            1298: {
+                slidesPerView: 4,
+            }
         },
         navigation: {
             nextEl: '.sale__button-next',
