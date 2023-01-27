@@ -16,6 +16,7 @@
 
 .sale__slider {
     position: relative;
+    overflow: hidden;
 }
 
 .sale__tabs {
@@ -50,11 +51,12 @@
     }
 }
 
-.cards {
+.sale__cards {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 15px;
+    overflow: hidden;
 
     .card__img {
         width: 200px;
@@ -167,24 +169,28 @@
     width: 1300px;
     height: 100%;
     transition: height 0.3s ease-in-out;
+    overflow: hidden;
 }
 
-.sale__swiper.sale__swiper-open {
+.sale__slider.sale__swiper-open {
     height: 600px;
     transition: height 0.3s ease-in-out;
+    .sale__cards{
+        height: 600px;
+    }
 }
 
 .sale__products {
     min-height: 492px;
-    transition: min-height 0.3s ease-in-out;
+    transition: 0.3s ease-in-out all;
 }
 
 .sale__products.sale__products-open {
     min-height: 600px;
-    transition: min-height 0.3s ease-in-out;
 }
 
-.card {
+.sale__card {
+    position: relative;
     max-width: 310px;
     border: 1px solid #F0F0F0;
     cursor: pointer;
@@ -257,11 +263,8 @@
 }
 
 @media (max-width: 1299px) {
-    .sale__swiper {
-        width: 1000px;
-    }
 
-    .card {
+    .sale__card {
         max-width: 250px;
         height: 310px;
 
@@ -276,9 +279,10 @@
         height: 380px;
     }
 
-    .cards {
+    .sale__cards {
         justify-content: center;
-
+        margin: 0 auto;
+        gap: 20px;
         .card_price {
             font-size: 12px;
         }
@@ -373,18 +377,11 @@
         margin: 0 auto 130px
     }
 
-    .sale__swiper {
-        width: 550px;
-    }
+
 
 }
 
-@media (max-width: 611px) {
 
-    .sale__swiper {
-        width: 400px;
-    }
-}
 
 @media (max-width: 510px) {
 
@@ -416,7 +413,4 @@
         }
     }
 
-    .sale__swiper {
-        width: 100%;
-    }
 }
