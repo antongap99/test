@@ -7,7 +7,7 @@
     min-width: 0;
 }
 
-.hero__sliper {
+.hero__slider {
     background-color: #F8F8F8;
 }
 
@@ -80,7 +80,8 @@
     margin-right: 36px;
 }
 
-.hero__sliper {
+.hero__slider {
+    position: relative;
     .pagination {
         position: absolute;
         width: 40px;

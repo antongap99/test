@@ -110,8 +110,8 @@
     <main class="main">
         <div class="main__wrapper wrapper">
             <section class="hero">
-                <div class="swiper hero__sliper">
-                    <div class="swiper-wrapper">
+                <div class="hero__slider">
+                    <div class="slider-wrapper">
                         <div class="swiper-slide">
                             <div class="slide__wrapper">
                                 <div class="hero__text">
@@ -123,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="slider-pagination"></div>
 
                     <button class="button-prev hero__button-prev">
                         <svg class="slider-arrow" width="17" height="12" viewbox="0 0 17 8" fill="none"
@@ -572,6 +572,94 @@
                                     </div>
 
                                 </div>
+                                 <div class="sale__card">
+                                    <span class="sale__marker">Sale</span>
+                                    <div class="card__favorite-icon">
+                                        <svg class="favorite__svg" width="24" height="24" viewbox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 8.40001C1.99975 6.95035 2.58239 5.56146 3.61681 4.54584C4.65124 3.53022 6.05058 2.97317 7.5 3.00001C9.21732 2.99089 10.856 3.71919 12 5.00001C13.144 3.71919 14.7827 2.99089 16.5 3.00001C17.9494 2.97317 19.3488 3.53022 20.3832 4.54584C21.4176 5.56146 22.0002 6.95035 22 8.40001C22 13.756 15.621 17.8 12 21C8.387 17.773 2 13.76 2 8.40001Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__eye-icon">
+                                        <svg class="eye__svg" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z"
+                                                fill="#C9C9C9" />
+                                        </svg>
+                                    </div>
+                                    <div class="card__img">
+                                        <img src="./assets/img/sale_sec/sale_ring4.png" alt="sale_ring"
+                                            class="sale__ring">
+                                    </div>
+                                    <div class="card_price sale45">
+                                        <span class="item-price">39 200 &#8381;</span>
+                                        <span class="old-price"></span>
+                                    </div>
+                                    <p class="card_caption">Стильное кольцо из белого золота c бриллиантами</p>
+                                    <div class="pagination">
+                                        <button class="pagination__item pagination__item_active"></button>
+                                        <button class="pagination__item"></button>
+                                        <button class="pagination__item"></button>
+                                    </div>
+                                    <div class="select__forms">
+                                        <form class="sale__select_metal select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Белое золото</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="11" class="select__input" type="radio" name="city"
+                                                        checked />
+                                                    <label for="11" class="select__label">
+                                                        <span class="label__text">Белое золото</span>
+                                                        <span class="checked"></span>
+                                                    </label>
+                                                    <input id="12" class="select__input" type="radio" name="city" />
+                                                    <label for="12" class="select__label">
+                                                        <span class="label__text">Желтое золото</span>
+                                                        <span class="checked"></span>
+                                                    </label>
+                                                    <input id="13" class="select__input" type="radio" name="city" />
+                                                    <label for="13" class="select__label">
+                                                        <span class="label__text">Серебро</span>
+                                                        <span class="checked"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form class="sale__select_size select__form">
+                                            <div class="sale__select select__wrapper select">
+                                                <div class="select__title">
+                                                    <span class="title__text">Размер: 16</span>
+                                                    <div class="drop sale__drop"></div>
+                                                </div>
+                                                <div class="sale__dropdown dropdown">
+                                                    <input id="1242" class="select__input" type="radio" name="city"
+                                                        checked />
+                                                    <label for="1242" class="select__label">
+                                                        <span class="label__text">Размер: 16</span>
+                                                        <span class="checked"></span>
+                                                    </label>
+                                                    <input id="122" class="select__input" type="radio" name="city" />
+                                                    <label for="122" class="select__label">
+                                                        <span class="label__text">Размер: 14</span>
+                                                        <span class="checked"></span>
+                                                    </label>
+                                                    <input id="123" class="select__input" type="radio" name="city" />
+                                                    <label for="123" class="select__label">
+                                                        <span class="label__text">Размер: 12</span>
+                                                        <span class="checked"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
                             </div>
                             <div class="sldiper-pagination"></div>
                             <div class="pagination"></div>
@@ -637,9 +725,9 @@
             <section class="today">
                 <div class="today__wrapper">
                     <h3 class="today__title">Товар дня</h3>
-                    <div class="swiper today__items">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide today__item">
+                    <div class="slider today__items">
+                        <div class="slider-wrapper">
+                            <div class="slider-slide today__item">
                                 <div class="item__wrapper">
                                     <div class="item_img">
                                         <img src="./assets/img/today_sec/today_img.png" alt="today_img"

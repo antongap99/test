@@ -4,21 +4,6 @@
     z-index: auto;
 }
 
-
-
-.sale__title {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 100%;
-    color: #303030;
-    margin-bottom: 24px;
-}
-
-.sale__slider {
-    position: relative;
-    overflow: hidden;
-}
-
 .sale__tabs {
     display: flex;
     gap: 8px;
@@ -48,6 +33,34 @@
     .sale__tab:focus {
         background: #303030;
         color: #FFFFFF;
+    }
+}
+
+.sale__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #303030;
+    margin-bottom: 24px;
+}
+
+.sale__slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.sale__wrapper {
+    position: relative;
+
+    .sale__button-prev {
+        top: 50px;
+        right: 62px;
+        transform: rotate(180deg);
+    }
+
+    .sale__button-next {
+        top: 50px;
+        right: 0;
     }
 }
 
@@ -149,33 +162,17 @@
 }
 
 
-
-.sale__wrapper {
-    position: relative;
-
-    .sale__button-prev {
-        top: 50px;
-        right: 62px;
-        transform: rotate(180deg);
-    }
-
-    .sale__button-next {
-        top: 50px;
-        right: 0;
-    }
-}
-
-.sale__swiper {
-    width: 1300px;
+.sale__slider {
     height: 100%;
     transition: height 0.3s ease-in-out;
-    overflow: hidden;
+
 }
 
 .sale__slider.sale__swiper-open {
     height: 600px;
     transition: height 0.3s ease-in-out;
-    .sale__cards{
+
+    .sale__cards {
         height: 600px;
     }
 }
@@ -229,8 +226,6 @@
         }
     }
 
-
-
     .card__forms {
         display: block;
     }
@@ -238,8 +233,6 @@
     .card_caption {
         padding-bottom: 24px;
     }
-
-
 
     .drop {
         position: absolute;
@@ -250,7 +243,9 @@
         right: 16px;
     }
 }
-
+.sale__card_hidden {
+    display: none;
+}
 .card_active {
     position: relative;
     z-index: 4;
@@ -283,6 +278,7 @@
         justify-content: center;
         margin: 0 auto;
         gap: 20px;
+
         .card_price {
             font-size: 12px;
         }

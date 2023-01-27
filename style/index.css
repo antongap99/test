@@ -454,7 +454,7 @@ p {
   min-width: 0;
 }
 
-.hero__sliper {
+.hero__slider {
   background-color: #F8F8F8;
 }
 
@@ -522,7 +522,10 @@ p {
   margin-right: 36px;
 }
 
-.hero__sliper .pagination {
+.hero__slider {
+  position: relative;
+}
+.hero__slider .pagination {
   position: absolute;
   width: 40px;
   height: 8px;
@@ -535,14 +538,14 @@ p {
   bottom: 24px;
   z-index: 10;
 }
-.hero__sliper .pagination .pagination__item {
+.hero__slider .pagination .pagination__item {
   width: 8px;
   height: 8px;
   border: 1px solid #303030;
   border-radius: 4px;
   cursor: pointer;
 }
-.hero__sliper .pagination .pagination__item_active {
+.hero__slider .pagination .pagination__item_active {
   background-color: #303030;
 }
 
@@ -711,19 +714,6 @@ p {
   z-index: auto;
 }
 
-.sale__title {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 100%;
-  color: #303030;
-  margin-bottom: 24px;
-}
-
-.sale__slider {
-  position: relative;
-  overflow: hidden;
-}
-
 .sale__tabs {
   display: flex;
   gap: 8px;
@@ -750,6 +740,32 @@ p {
 .sale__tabs .sale__tab:focus {
   background: #303030;
   color: #FFFFFF;
+}
+
+.sale__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: #303030;
+  margin-bottom: 24px;
+}
+
+.sale__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.sale__wrapper {
+  position: relative;
+}
+.sale__wrapper .sale__button-prev {
+  top: 50px;
+  right: 62px;
+  transform: rotate(180deg);
+}
+.sale__wrapper .sale__button-next {
+  top: 50px;
+  right: 0;
 }
 
 .sale__cards {
@@ -835,24 +851,9 @@ p {
   fill: #E24B33;
 }
 
-.sale__wrapper {
-  position: relative;
-}
-.sale__wrapper .sale__button-prev {
-  top: 50px;
-  right: 62px;
-  transform: rotate(180deg);
-}
-.sale__wrapper .sale__button-next {
-  top: 50px;
-  right: 0;
-}
-
-.sale__swiper {
-  width: 1300px;
+.sale__slider {
   height: 100%;
   transition: height 0.3s ease-in-out;
-  overflow: hidden;
 }
 
 .sale__slider.sale__swiper-open {
@@ -920,6 +921,10 @@ p {
   width: 7.57px;
   top: 11px;
   right: 16px;
+}
+
+.sale__card_hidden {
+  display: none;
 }
 
 .card_active {
@@ -1267,7 +1272,7 @@ p {
   background: #E24B33;
   color: #FFFFFF;
   top: 144px;
-  right: 350px;
+  right: 320px;
 }
 .today__item-info .line {
   max-width: 650px;
@@ -1489,7 +1494,7 @@ p {
     background: #E24B33;
     color: #FFFFFF;
     top: 121px;
-    right: 350px;
+    right: 300px;
   }
 }
 @media (max-width: 691px) {
@@ -1583,7 +1588,7 @@ p {
 .sale__timer {
   position: absolute;
   top: 115px;
-  right: 100px;
+  right: 67px;
   width: 224px;
   height: 64px;
   background-color: #F5F5F5;
@@ -1620,7 +1625,7 @@ p {
 @media (max-width: 1248px) {
   .sale__timer {
     top: 92px;
-    right: 104px;
+    right: 49px;
   }
 }
 @media (max-width: 476px) {
