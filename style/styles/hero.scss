@@ -15,7 +15,6 @@
     content: '';
     background: url('../../assets/img/icons/diamond.svg') no-repeat;
     width: 832.77px;
-    height: 642.52px;
     position: absolute;
     top: 24px;
     z-index: -1;
@@ -139,9 +138,26 @@
     .slide__wrapper {
         justify-content: center;
     }
+
+    .slide__wrapper::after {
+        content: '';
+        background: url('../../assets/img/icons/diamond.svg') no-repeat;
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 24px;
+        z-index: -1;
+    }
 }
 
 @media (max-width: 954px) {
+    .slide__wrapper::after {
+        content: '';
+        background: url('../../assets/img/icons/diamond.svg') no-repeat;
+        display: none;
+        top: 24px;
+        z-index: -1;
+    }
     .hero__text {
         .hero__title {
             margin-bottom: 30px;
