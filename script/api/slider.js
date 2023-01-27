@@ -154,12 +154,14 @@ buttonPrev.addEventListener('click', () => {
             if (!cards[i].classList.contains('sale__card_hidden')) {
                 if (cards[i - 1]) {
                     if (cards[i - 1].classList.contains('sale__card_hidden')) {
-                        cards[i].classList.remove('sale__card_hidden');
+                        cards[i - 1].classList.remove('sale__card_hidden');
                     }
-                    if (cards[i + 1] && cards[i + 1].classList.contains('sale__card_hidden')) {
+                    if (!cards[i + 1] || cards[i + 1].classList.contains('sale__card_hidden')) {
                         cards[i].classList.add('sale__card_hidden');
                         break
                     }
+                }else {
+                    break;
                 }
             }
         }
