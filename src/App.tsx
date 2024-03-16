@@ -3,11 +3,10 @@ import {MainPage} from "./pages/MainPage/MainPage.tsx";
 import {
     AppRoot,
     View,
-    Panel,
+    Panel, SplitLayout, SplitCol,
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import {FilterProvider} from "./features/SortableGroups/model/context.tsx";
-import GroupFilter from "./features/SortableGroups/ui/GroupFilter.tsx";
 
 function App() {
     return (
@@ -16,8 +15,14 @@ function App() {
                 <Panel id="main">
                     <MainPage>
                         <FilterProvider>
-                            <GroupFilter/>
-                            <GroupList/>
+                            <SplitLayout>
+                                <SplitCol width={280}>
+                                    <div></div>
+                                </SplitCol>
+                                <SplitCol>
+                                    <div></div>
+                                </SplitCol>
+                            </SplitLayout>
                         </FilterProvider>
                     </MainPage>
                 </Panel>
