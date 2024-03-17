@@ -1,4 +1,3 @@
-import {GroupList} from "./Widget/GroupList/GroupList.tsx";
 import {MainPage} from "./pages/MainPage/MainPage.tsx";
 import {
     AppRoot,
@@ -6,7 +5,8 @@ import {
     Panel, SplitLayout, SplitCol,
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import {FilterProvider} from "./features/SortableGroups/model/context.tsx";
+import {ProductCart} from "./Widget/ProductCart/ui/ProductCart.tsx";
+import {TotalResult} from "./Widget/TotalResult/ui/TotalResult.tsx";
 
 function App() {
     return (
@@ -14,16 +14,14 @@ function App() {
             <View activePanel="main">
                 <Panel id="main">
                     <MainPage>
-                        <FilterProvider>
-                            <SplitLayout>
-                                <SplitCol width={280}>
-                                    <div></div>
-                                </SplitCol>
-                                <SplitCol>
-                                    <div></div>
+                            <SplitLayout style={{ justifyContent: 'center', maxWidth: 1280, margin: '0 auto' }}>
+	                            <SplitCol maxWidth={600}>
+		                            <ProductCart/>
+	                            </SplitCol>
+                                <SplitCol maxWidth={280}>
+                                    <TotalResult/>
                                 </SplitCol>
                             </SplitLayout>
-                        </FilterProvider>
                     </MainPage>
                 </Panel>
             </View>
